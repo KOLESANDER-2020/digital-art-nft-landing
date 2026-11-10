@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 		// check if the form is valid
 		var valid = pristine.validate(); // returns true or false
-if(valid){alert("Ваша почта отправлена")}
+if(valid){alert("Thank you! Your e-mail has been sent")}
 	});
 
 });
