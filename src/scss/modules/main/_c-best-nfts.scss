@@ -1,0 +1,99 @@
+.best-nfts {
+	.container {
+		padding: 92px 0;
+		display: flex;
+		justify-content: space-between;
+		gap: 40px;
+		align-items: center;
+	}
+
+	.header-main-title {
+		margin-bottom: 20px;
+	}
+}
+
+.best-bottom-block {
+	display: flex;
+	gap: 36px;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.best-nfts-paragraph {
+	color: var(--text-main-color);
+	font-family: 'Inter', sans-serif;
+	font-size: var(--fz-16);
+	line-height: 1.6;
+	font-weight: 400;
+	text-align: left;
+	margin-bottom: 40px;
+}
+
+.best-nfts-content {
+	flex-basis: 420px;
+	flex-shrink: 0;
+}
+
+.best-nfts-img {
+	position: relative;
+	width: 100%;
+	max-width: 740px;
+	height: auto;
+	aspect-ratio: 1/0.757;
+	isolation: isolate;
+}
+
+.best-nfts-img_bottom {
+	position: absolute;
+	width: 55.5%;
+	height: auto;
+	top: 0;
+	right: 0;
+	transition: all 0.5s ease;
+}
+
+.best-nfts-img_top {
+	position: absolute;
+	width: 55.5%;
+	height: auto;
+	bottom: 0;
+	left: 0;
+	z-index: 10;
+	transition: all 0.5s ease;
+}
+
+.best-nfts-img_bottom:hover {
+	z-index: 20;
+	transform: scale(1.05);
+	transition: all 0.5s ease;
+	mix-blend-mode: color;
+}
+
+.best-nfts-img_top:hover {
+	transform: scale(1.05);
+	transition: all 0.5s ease;
+	mix-blend-mode: color;
+}
+
+
+@media (max-width: 1200px) {
+	.best-nfts {
+		.container {
+			flex-direction: column;
+		}
+	}
+
+	.best-nfts-content {
+		flex-basis: auto;
+		width: 100%;
+	}
+
+}
+
+@media (max-width: 560px) {
+	.best-nfts {
+		.container {
+			padding: 40px 0;
+		}
+	}
+}

@@ -1,0 +1,182 @@
+.unique_art{
+	.container{
+		padding: 92px 0;
+	}
+
+	.header-main-title{
+		width: 100%;
+		max-width: 510px;
+	}
+}
+
+.slider-card-hero{
+	display: flex;
+
+
+}
+
+.card-hero{
+	width: 100%;
+	padding: 20px;
+	background-color: var(--bg-block);
+	border-radius: var(--border-radius-20);
+	border-top: var(--border-active);
+	width: 100%;
+	max-width: 410px;
+	mix-blend-mode: color;
+}
+
+.slider-card-img{
+	margin-bottom: 20px;
+}
+
+.name-hero-block{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 16px;
+	gap: 15px;
+}
+
+.name-hero-title{
+	color: var(--text-main-color);
+	font-family: 'Inter', serif;
+	font-size: var(--fz-24);
+	line-height: 1.2;
+	font-weight: 700;
+	text-align: left;
+}
+
+.name-hero-price{
+	color: var(--text-main-color);
+	font-family: 'Inter', serif;
+	font-size: var(--fz-16);
+	line-height: 1.2;
+	font-weight: 700;
+	text-align: left;
+	padding-left: 24px;
+	position: relative;
+}
+
+.name-hero-price::before {
+	content: "";
+	display: block;
+	position: absolute;
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M6.89998 9.6L11.7 7.5C11.9 7.4 12.1 7.4 12.4 7.5L17.2 9.6C17.6 9.8 18 9.3 17.7 8.9L12.7 2.8C12.4 2.4 11.8 2.4 11.5 2.8L6.49997 8.9C6.09997 9.3 6.49998 9.8 6.89998 9.6Z' stroke='white' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M6.89998 15.4L11.7 17.5C11.9 17.6 12.1 17.6 12.4 17.5L17.2 15.4C17.6 15.2 18 15.7 17.7 16.1L12.7 22.2C12.4 22.6 11.8 22.6 11.5 22.2L6.49997 16.1C6.09997 15.7 6.49998 15.2 6.89998 15.4Z' stroke='white' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M12 9.8999L6.79999 12.4999L12 15.0999L17.2 12.4999L12 9.8999Z' stroke='white' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
+	background-size: contain;
+	background-repeat: no-repeat;
+	left: 0;
+	top: -1px;
+	width: 24px;
+	height: 24px;
+}
+
+.time-card-block{
+	display: flex;
+	justify-content: space-between;
+	gap: 4px;
+}
+
+.name-card-ending{
+	color: var(--link-grey);
+	font-family: 'Inter', serif;
+	font-size: var(--fz-14);
+	line-height: 1.6;
+	font-weight: 400;
+	text-align: left;
+margin: 0 0 8px;
+
+}
+
+.name-card-time{
+	color: var(--text-main-color);
+	font-family: 'Inter', serif;
+	font-size: var(--fz-16);
+	line-height: 1.2;
+	font-weight: 700;
+	text-align: left;
+	padding-left: 36px;
+	position: relative;
+}
+
+.name-card-time::before {
+	content: "";
+	display: block;
+	position: absolute;
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M22 12.5C22 18.02 17.52 22.5 12 22.5C6.48 22.5 2 18.02 2 12.5C2 6.98 6.48 2.5 12 2.5C17.52 2.5 22 6.98 22 12.5Z' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M15.71 15.68L12.61 13.83C12.07 13.51 11.63 12.74 11.63 12.11V8.01001' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
+	background-size: contain;
+	background-repeat: no-repeat;
+	left: 0;
+	top: -3px;
+	width: 24px;
+	height: 24px;
+}
+
+.splide__arrow {
+    background: var(--bg-active);
+	width: 50px;
+	height: 50px;
+}
+
+.splide__arrow--prev {
+    left: -20px; 
+}
+
+.splide__arrow--next {
+    right: -20px;
+}
+
+.splide__pagination {
+    bottom: -30px;
+}
+
+.splide__pagination__page.is-active {
+    background: var(--bg-active);
+    transform: scale(1.5);
+}
+
+.splide__slide {
+    filter: grayscale(70%); 
+	transform: scale(0.97);
+    transition: transform 0.3s, filter 0.5s;
+}
+
+.splide__slide.is-active {
+    filter: grayscale(0%);
+    transform: scale(1);
+}
+
+
+@media (max-width: 560px) {
+.name-hero-block{
+	flex-direction: column;
+	align-items: start;
+}
+
+.time-card-block{
+flex-direction: column;
+gap: 15px;
+}
+
+.time-card-block-text{
+	display: flex;
+justify-content: space-around;
+
+}
+
+.splide__arrow--prev {
+	top: 0px;;
+    bottom: auto;
+}
+
+.splide__arrow--next {
+    top: 0px;;
+    bottom: auto;
+}
+
+.unique_art{
+	.container{
+		padding: 40px 0;
+	}
+}
+}

@@ -1,0 +1,188 @@
+.popular-artists {
+	.container {
+		padding: 92px 0;
+	}
+
+	.header-main-title {
+		width: 100%;
+		max-width: 320px;
+	}
+
+}
+
+.popular_artists-img {
+	height: 100%;
+	max-height: 311px;
+}
+
+.popular_artists-img-2 {
+	height: 100%;
+	max-height: 652px;
+}
+
+.popular-flex {
+	display: flex;
+	justify-content: space-between;
+	gap: 30px;
+}
+
+.popular-flex-wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 30px;
+	flex-basis: 850px;
+
+}
+
+.popular-flex-item-wrap {
+	display: flex;
+	justify-content: space-between;
+	gap: 30px;
+}
+
+.popular-flex-item {
+
+	position: relative;
+}
+
+
+.owner-info {
+	display: flex;
+	gap: 12px;
+	position: absolute;
+	left: 24px;
+	bottom: 24px;
+}
+
+.owner-text {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	justify-content: space-between;
+}
+
+.owner-contents {
+	color: var(--text-main-color);
+	font-family: 'Inter', sans-serif;
+	font-size: var(--fz-14);
+	line-height: 1.6;
+	font-weight: 400;
+	text-align: left;
+}
+
+.owner-name {
+	color: var(--text-main-color);
+	font-family: 'Inter', sans-serif;
+	font-size: var(--fz-16);
+	line-height: 1.2;
+	font-weight: 700;
+	text-align: left;
+}
+
+.owner-img {
+	aspect-ratio: 1 / 1;
+}
+
+.popular-flex-item-01 .popular_artists-img img {
+	width: 100%;
+	max-width: 311px;
+}
+
+.popular-flex-item-03 .popular_artists-img img {
+	width: 100%;
+	max-width: 520px;
+}
+
+.popular-flex-item-02 .popular_artists-img img,
+.popular-flex-item-04 .popular_artists-img img,
+.popular-flex-item-05 .popular_artists-img img {
+	width: 100%;
+	max-width: 410px;
+}
+
+
+@media (max-width: 1347px) {
+	.popular-flex-item-02 {
+		display: none;
+	}
+
+	.popular-flex {
+		justify-content: center;
+	}
+}
+
+
+
+@media (max-width: 800px) {
+	.owner-img {
+		width: 36px;
+		height: 36px;
+	}
+
+	.owner-contents {
+		font-size: var(--fz-12);
+	}
+
+	.owner-name {
+		font-size: var(--fz-14);
+	}
+
+	.owner-info {
+		gap: 6px;
+		left: 12px;
+		bottom: 10px;
+	}
+
+	.popular-flex-item {
+		padding-bottom: 60px;
+	}
+
+	.popular-artists {
+		.header-main-title {
+			max-width: 100%;
+		}
+
+	}
+}
+
+@media (max-width: 650px) {
+	.popular-flex-item-wrap {
+		flex-direction: column;
+	}
+
+	.popular-flex-item-01 .popular_artists-img img {
+		max-width: 100%;
+	}
+	
+	.popular-flex-item-03 .popular_artists-img img {
+		max-width: 100%;;
+	}
+	
+	.popular-flex-item-02 .popular_artists-img img,
+	.popular-flex-item-04 .popular_artists-img img,
+	.popular-flex-item-05 .popular_artists-img img {
+		max-width: 100%;;
+	}
+
+	.popular_artists-img {
+		max-height: 100%;
+	}
+
+	.popular_artists-img-2 {
+		max-height: 100%;
+	}
+
+
+	.popular_artists-img img {
+		width: 100%;
+	}
+}
+
+@media (max-width: 560px) {
+	.popular-artists {
+		.container {
+			padding: 40px 0;
+		}
+	}
+}
